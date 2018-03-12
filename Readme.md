@@ -58,7 +58,7 @@ kubectl create -f ./deployments/04-deployment.yml
 kubectl edit deployment k8-playground-webapp #v2.0
 ```
 
-## undo deployment
+### undo deployment
 
 ``` bash
 
@@ -66,7 +66,7 @@ kubectl rolleout undo
 
 ```
 
-## deploy a bad version 
+### deploy a bad version 
 
 ```bash 
 
