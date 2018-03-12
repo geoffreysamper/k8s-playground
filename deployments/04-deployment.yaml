@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8-playground-webapp
+spec:
+  selector: 
+   matchLabels:
+     app: k8-playground       
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        # Apply this label to pods and default
+        app: k8-playground
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: webapp-container
+          image: index.docker.io/geoffreysamper/k8s-playground:v1.0
+          imagePullPolicy: Always
+          ports: 
+            - containerPort: 4000
+        - name: liveness
+          image: k8s.gcr.io/liveness
+          args:
+          - /server
+          livenessProbe:
+           httpGet:
+             path: /
+             port: 4000
+           initialDelaySeconds: 3
+           periodSeconds: 3
+           readinessProbe:
+           httpGet:
+            path: /ready
+            port: 8000
+           timeoutSeconds: 15
