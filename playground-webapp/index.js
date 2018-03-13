@@ -1,12 +1,19 @@
 const express = require('express')
 const app = express()
 const hostname = require('os').hostname();
-app.get('/', (req, res) => res.status(500).send('hello world v2 ' + hostname));
+app.get('/', (req, res) => res.send('hello world v1 ' + hostname));
 app.get('/ready', (req, res) =>
     setTimeout(function (){
         res.status(200).send('ready');
     },3000)
 );
+
+app.get('/', (req, res) => res.send('hello world v1 ' + hostname));
+
+app.get('/env', function(req,res){
+    res.json(process.env);
+
+});
 
 app.listen(4000, () => console.log('listening on port 4000!', hostname))
 
