@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-config
+  namespace: default
+data:
+ ENABLE_CORS:  "true"
+ NODE_ENV:  development
+ APPINSIGHTS_ENABLED:  "true"
+ DEBUG: tracker:*

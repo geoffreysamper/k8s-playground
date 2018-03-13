@@ -1,4 +1,4 @@
-# Lab
+# Lab Session 1
 
 ## Lab 1: create a pod
 
