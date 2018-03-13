@@ -65,11 +65,3 @@ kubectl edit deployment k8-playground-webapp #v2.0
 kubectl rolleout undo
 
 ```
-
-### deploy a bad version 
-
-```bash 
-
-kubectl edit deployment k8-playground-webapp #v2.1-bad
-
-```
