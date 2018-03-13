@@ -1,6 +1,6 @@
 # Labs Session 2
 
-## lab 1
+## Lab 1 deployments continued
 
 
 ### Deployment v1 
