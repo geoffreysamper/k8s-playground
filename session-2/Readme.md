@@ -22,7 +22,7 @@ In this lab we will only use envFrom there are a lot of options
 - run command ```minikube service k8-playground-svc ```
 
 ## Lab 3 config maps from files
-- run follow command ```kubectl create prod.web.config configmap --from-file=./deployments/web.config```
+- run follow command ```kubectl create configmap prod.web.config  --from-file=./deployments/web.config```
 - run follow command ```kubectl create -f ./deployments/04-simple-pod.yaml```
 - run the command describe on the ```kubectl describe pod k8-playground-webapp```
 
