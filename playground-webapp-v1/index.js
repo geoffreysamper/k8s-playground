@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const hostname = require('os').hostname();
-app.get('/', (req, res) => res.send('hello world v3 ' + hostname));
+app.get('/', (req, res) => res.send('hello world v1 ' + hostname));
 app.get('/ready', (req, res) =>  {           
     res.status(200).send('ready');
    }
