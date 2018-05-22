@@ -21,7 +21,7 @@ kubectl describe k8-playground-webapp
 ``` bash
 
 kubectl create -f ./deployments/02-services.yml
-minikube service k8-playground-svc  # to get ip 
+kubectl get service # to get ip 
 
  ```
 

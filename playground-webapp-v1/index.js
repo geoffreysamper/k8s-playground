@@ -2,10 +2,9 @@ const express = require('express')
 const app = express()
 const hostname = require('os').hostname();
 app.get('/', (req, res) => res.send('hello world v3 ' + hostname));
-app.get('/ready', (req, res) =>
-    setTimeout(function (){
-        res.status(200).send('ready');
-    },3000)
+app.get('/ready', (req, res) =>  {           
+    res.status(200).send('ready');
+   }
 );
 
 app.get("/webconfig", function(req, res){

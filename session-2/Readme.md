@@ -4,14 +4,13 @@
 
 
 ### Deployment v1 
-
- - open dashboard ```minikube dashboard```
+ - 
  - execute the deployment ```kubectl create -f  deployments/01-deployment.yaml```
- 
+ - ```kubectl get deployments```
 ### Deployment bad version
 
 - update the image tag to 2.0```kubectl edit deployment k8-playground-webapp``` 
-- check dashboard
+- check status 
 - undo the image ``` kubectl rollout status deployments k8-playground-webapp```
 
 ## Lab 2 config maps
