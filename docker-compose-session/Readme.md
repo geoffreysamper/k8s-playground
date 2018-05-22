@@ -8,3 +8,6 @@
 # other commands
 - docker ps
 - docker log
+
+# Do it your self 
+Try to make a docker compose file for the docker-training app https://github.com/docker-training/webapp
