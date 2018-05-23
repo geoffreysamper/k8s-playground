@@ -11,7 +11,7 @@ kubectl create -f ./deployments/01-simple-pod.yaml
 
 ```bash
 
-kubectl log k8-playground-webapp
+kubectl logs k8-playground-webapp
 kubectl describe k8-playground-webapp
 
 ```
