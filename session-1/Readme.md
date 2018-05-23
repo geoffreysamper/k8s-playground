@@ -20,7 +20,7 @@ kubectl describe pod k8-playground-webapp
 
 ``` bash
 
-kubectl create -f ./deployments/02-services.yml
+kubectl create -f ./deployments/02-services.yaml
 kubectl get service # to get ip 
 
  ```
@@ -29,7 +29,7 @@ kubectl get service # to get ip
 
 ```bash
 
-kubectl create -f ./deployments/03-deployment.yml
+kubectl create -f ./deployments/03-deployment.yaml
 
 ```
 
@@ -49,7 +49,7 @@ kubectl delete pod name
 ## Lab 4: create deployment with readyness and health probes
 
 ```bash
-kubectl create -f ./deployments/04-deployment.yml
+kubectl create -f ./deployments/04-deployment.yaml
  ```
 
 ### edit deployement to do a rolleout
